@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rv7v7pjAUIAqY8MCeoDLD3ghoz1JBLpVqZQs1u0xvwgjgg7ay8n7knJiBPAFnHXd0DuNMjB72oMRgJlfRDGF5g==",
+  "dgSpecHash": "q1tHV/tvHY2uV/xP3Zh5FY7IZQvjMVEExD6VeHlFQYhbRA8X1UI4U+k0L9aaNxpgE22aPSBPRNG96BBiMEkAxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\baitap\\baitap\\baitap.csproj",
+  "projectFilePath": "D:\\Test1\\Test\\baitap\\baitap\\baitap.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

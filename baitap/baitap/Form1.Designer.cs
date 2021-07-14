@@ -49,12 +49,14 @@ namespace baitap
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cBtheLoai = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSach)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(361, 92);
+            this.btnThem.Location = new System.Drawing.Point(453, 61);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 23);
             this.btnThem.TabIndex = 0;
@@ -64,7 +66,7 @@ namespace baitap
             // 
             // btnTim
             // 
-            this.btnTim.Location = new System.Drawing.Point(361, 213);
+            this.btnTim.Location = new System.Drawing.Point(453, 184);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(75, 23);
             this.btnTim.TabIndex = 2;
@@ -74,7 +76,7 @@ namespace baitap
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(361, 173);
+            this.btnXoa.Location = new System.Drawing.Point(453, 148);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 3;
@@ -84,7 +86,7 @@ namespace baitap
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(361, 131);
+            this.btnSua.Location = new System.Drawing.Point(453, 103);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 23);
             this.btnSua.TabIndex = 4;
@@ -95,7 +97,7 @@ namespace baitap
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 83);
+            this.label1.Location = new System.Drawing.Point(108, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 15);
             this.label1.TabIndex = 5;
@@ -104,7 +106,7 @@ namespace baitap
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 122);
+            this.label2.Location = new System.Drawing.Point(108, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 6;
@@ -113,7 +115,7 @@ namespace baitap
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(108, 157);
+            this.label3.Location = new System.Drawing.Point(108, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 7;
@@ -122,7 +124,7 @@ namespace baitap
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(108, 236);
+            this.label4.Location = new System.Drawing.Point(109, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 15);
             this.label4.TabIndex = 8;
@@ -131,7 +133,7 @@ namespace baitap
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(108, 197);
+            this.label5.Location = new System.Drawing.Point(108, 148);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(43, 15);
             this.label5.TabIndex = 9;
@@ -139,35 +141,35 @@ namespace baitap
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(180, 83);
+            this.txtId.Location = new System.Drawing.Point(180, 29);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 23);
             this.txtId.TabIndex = 10;
             // 
             // txtSoTrang
             // 
-            this.txtSoTrang.Location = new System.Drawing.Point(180, 236);
+            this.txtSoTrang.Location = new System.Drawing.Point(180, 185);
             this.txtSoTrang.Name = "txtSoTrang";
             this.txtSoTrang.Size = new System.Drawing.Size(100, 23);
             this.txtSoTrang.TabIndex = 11;
             // 
             // txtTacGia
             // 
-            this.txtTacGia.Location = new System.Drawing.Point(180, 197);
+            this.txtTacGia.Location = new System.Drawing.Point(180, 140);
             this.txtTacGia.Name = "txtTacGia";
             this.txtTacGia.Size = new System.Drawing.Size(100, 23);
             this.txtTacGia.TabIndex = 12;
             // 
             // txtTenSach
             // 
-            this.txtTenSach.Location = new System.Drawing.Point(180, 157);
+            this.txtTenSach.Location = new System.Drawing.Point(180, 104);
             this.txtTenSach.Name = "txtTenSach";
             this.txtTenSach.Size = new System.Drawing.Size(100, 23);
             this.txtTenSach.TabIndex = 13;
             // 
             // txtMaSach
             // 
-            this.txtMaSach.Location = new System.Drawing.Point(180, 119);
+            this.txtMaSach.Location = new System.Drawing.Point(180, 69);
             this.txtMaSach.Name = "txtMaSach";
             this.txtMaSach.Size = new System.Drawing.Size(100, 23);
             this.txtMaSach.TabIndex = 14;
@@ -212,11 +214,30 @@ namespace baitap
             this.Column5.HeaderText = "Số Trang";
             this.Column5.Name = "Column5";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(108, 229);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 15);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Danh mục thể loại";
+            // 
+            // cBtheLoai
+            // 
+            this.cBtheLoai.FormattingEnabled = true;
+            this.cBtheLoai.Location = new System.Drawing.Point(218, 221);
+            this.cBtheLoai.Name = "cBtheLoai";
+            this.cBtheLoai.Size = new System.Drawing.Size(130, 23);
+            this.cBtheLoai.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 389);
+            this.Controls.Add(this.cBtheLoai);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvSach);
             this.Controls.Add(this.txtMaSach);
             this.Controls.Add(this.txtTenSach);
@@ -263,6 +284,8 @@ namespace baitap
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cBtheLoai;
     }
 }
 
